@@ -1,0 +1,24 @@
+<svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="248.3112336013678" height="271.6927046840593" viewBox="46.900001525878906 41.900001525878906 106.20000457763672 116.20000457763672" xml:space="preserve" preserveAspectRatio="none" data-parent="shape_LUmkm7QtYP">
+<style type="text/css">
+	.st{fill:rgb(90 224 254)}
+</style>
+<g>
+	<path class="st" d="M89.9,44.6L54.5,65c-4.7,2.7-7.6,7.7-7.6,13.1v43.8c0,5.4,2.9,10.4,7.6,13.1l35.4,20.4
+		c6.2,3.6,13.9,3.6,20.2,0l35.4-20.4c4.7-2.7,7.6-7.7,7.6-13.1V78.1c0-5.4-2.9-10.4-7.6-13.1l-35.4-20.4C103.8,41,96.2,41,89.9,44.6
+		L89.9,44.6z M105.5,49l38.7,22.3c1.7,1,2.8,2.8,2.8,4.8v47.8c0,2-1,3.8-2.8,4.8L105.5,151c-3.4,2-7.6,2-11,0l-38.7-22.3
+		c-1.7-1-2.8-2.8-2.8-4.8V76.1c0-2,1-3.8,2.8-4.8L94.5,49C97.9,47,102.1,47,105.5,49L105.5,49z M105,53.3"></path>
+	<g>
+		<rect x="113" y="66.9" class="st" width="13.5" height="23"></rect>
+		<rect x="113" y="109.2" class="st" width="13.5" height="25.7"></rect>
+		<rect x="120.3" y="96.6" class="st" width="2.8" height="2.8"></rect>
+		<rect x="120.3" y="102.7" class="st" width="2.8" height="2.8"></rect>
+		<rect x="123.6" y="93.6" class="st" width="2.8" height="2.8"></rect>
+		<rect x="123.6" y="99.7" class="st" width="2.8" height="2.8"></rect>
+		<rect x="126.9" y="96.6" class="st" width="2.8" height="2.8"></rect>
+		<rect x="126.9" y="102.7" class="st" width="2.8" height="2.8"></rect>
+		<path class="st" d="M87.2,88.2V66.9H73.6v28.8c2.3-0.2,4.5-0.8,6.7-1.8C83.1,92.5,85.5,90.5,87.2,88.2z"></path>
+		<path class="st" d="M116.9,102.4h2.8v-2.8h-2.8v-3.3h2.8v-2.8h-2.8l-29.7,0v0c-1.6,1.4-3.3,2.6-5.3,3.6c-2.7,1.3-5.5,2-8.3,2.2
+			v35.5h13.6v-29.4l29.7,0V102.4z"></path>
+	</g>
+</g>
+</svg>
