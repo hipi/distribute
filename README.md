@@ -2,5 +2,5 @@
 内容分发
 
 ```
-https://cdn.jsdelivr.net/gh/cyea/distribute@master/...
+https://cdn.jsdelivr.net/gh/hipi/distribute@master/...
 ```
