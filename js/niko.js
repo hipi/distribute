@@ -1,3 +1,12 @@
+/* 
+实现了 jquery 基本的选择器方法
+addClass
+removeClass
+eq
+style
+html
+val
+*/
 class Niko {
   static getInstance(selector) {
     if (!Niko.instances) Niko.instances = {};
@@ -12,8 +21,20 @@ class Niko {
     return res;
   }
 
+  static getElements(selector) {
+    return document.querySelectorAll(selector);
+  }
+  static makeArray(nodeList) {
+    const _this = this;
+    nodeList.forEach((elem, index) => {
+      _this[index] = elem;
+    });
+  }
+
   constructor(selector) {
-    this.ele = document.querySelectorAll(selector);
+    const _this = this;
+    _this.ele = Niko.getElements(selector);
+    Niko.makeArray.call(_this, _this.ele);
   }
 
   addClass(className) {
@@ -45,6 +66,17 @@ class Niko {
   style(styleName, styStr) {
     for (let item of this.ele) {
       item.style[styleName] = styStr;
+    }
+    return this;
+  }
+
+  val() {
+    return this.ele[0].value;
+  }
+
+  html(domStr) {
+    for (let item of this.ele) {
+      item.innerHTML = domStr;
     }
     return this;
   }
