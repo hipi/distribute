@@ -30,7 +30,6 @@ class Niko {
       _this[index] = elem;
     });
   }
-
   constructor(selector) {
     const _this = this;
     _this.ele = Niko.getElements(selector);
@@ -71,14 +70,39 @@ class Niko {
   }
 
   val() {
-    return this.ele[0].value;
+    if (this.ele.length === 0) {
+      return;
+    }
+    const insetDom =
+      arguments.length > 0 && typeof arguments[0] === "string"
+        ? arguments[0]
+        : false;
+    if (insetDom) {
+      for (let item of this.ele) {
+        item.value = insetDom;
+      }
+      return this;
+    } else {
+      return this.ele[0].value;
+    }
   }
 
-  html(domStr) {
-    for (let item of this.ele) {
-      item.innerHTML = domStr;
+  html() {
+    if (this.ele.length === 0) {
+      return;
     }
-    return this;
+    const insetDom =
+      arguments.length > 0 && typeof arguments[0] === "string"
+        ? arguments[0]
+        : false;
+    if (insetDom) {
+      for (let item of this.ele) {
+        item.innerHTML = insetDom;
+      }
+      return this;
+    } else {
+      return this.ele[0].innerHTML;
+    }
   }
 }
 window.$ = (selector) => {
