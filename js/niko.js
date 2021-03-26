@@ -69,17 +69,14 @@ class Niko {
     return this;
   }
 
-  val() {
+  val(value) {
     if (this.ele.length === 0) {
       return;
     }
-    const insetDom =
-      arguments.length > 0 && typeof arguments[0] === "string"
-        ? arguments[0]
-        : false;
-    if (insetDom) {
+    const inset = typeof value !== "undefined";
+    if (inset) {
       for (let item of this.ele) {
-        item.value = insetDom;
+        item.value = value;
       }
       return this;
     } else {
@@ -87,17 +84,14 @@ class Niko {
     }
   }
 
-  html() {
+  html(dom) {
     if (this.ele.length === 0) {
       return;
     }
-    const insetDom =
-      arguments.length > 0 && typeof arguments[0] === "string"
-        ? arguments[0]
-        : false;
-    if (insetDom) {
+    const inset = typeof dom !== "undefined";
+    if (inset) {
       for (let item of this.ele) {
-        item.innerHTML = insetDom;
+        item.innerHTML = dom;
       }
       return this;
     } else {
