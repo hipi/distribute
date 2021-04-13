@@ -7,6 +7,7 @@ style
 html
 val
 */
+
 class Niko {
   static getInstance(selector) {
     if (!Niko.instances) Niko.instances = {};
@@ -143,6 +144,13 @@ class Niko {
     }
   }
 }
-window.$ = (selector) => {
+
+const _global =
+  typeof window === "object" && window.window === window
+    ? window
+    : typeof self === "object" && self.self === self
+    ? self
+    : this;
+_global.$ = (selector) => {
   return Niko.getInstance(selector);
 };
