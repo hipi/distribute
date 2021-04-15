@@ -3,11 +3,14 @@
 addClass
 removeClass
 eq
-style
+css
 html
+text
 val
+each
+on
+off
 */
-
 class Niko {
   static getInstance(selector) {
     if (!Niko.instances) Niko.instances = {};
@@ -120,6 +123,20 @@ class Niko {
       return this.eles[0].innerHTML;
     }
   }
+  text(dom) {
+    if (this.eles.length === 0) {
+      return;
+    }
+    const inset = typeof dom !== "undefined";
+    if (inset) {
+      for (let item of this.eles) {
+        item.innerText = dom;
+      }
+      return this;
+    } else {
+      return this.eles[0].innerText;
+    }
+  }
 
   each(fn) {
     const _this = this;
@@ -144,13 +161,6 @@ class Niko {
     }
   }
 }
-
-const _global =
-  typeof window === "object" && window.window === window
-    ? window
-    : typeof self === "object" && self.self === self
-    ? self
-    : this;
-_global.$ = (selector) => {
+window.$ = (selector) => {
   return Niko.getInstance(selector);
 };
