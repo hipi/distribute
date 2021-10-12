@@ -1,0 +1,10 @@
+```css
+@font-face{
+  font-family:FontStyle;
+  src:url("https://cdn.jsdelivr.net/gh/hipi/cdn/ZFonts/13.woff2");format("woff2");
+  font-display:swap;
+}
+body{
+  font-family:FontStyle;
+}
+```
